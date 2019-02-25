@@ -155,6 +155,6 @@ module.exports = (app, config, ad) => {
 	const start = new Date();
 	app.get("/status", async (req, res) => {
 		let uptime = new Date() - start;
-		res.send({online: true, uptime});
+		res.send({online: true, uptime: uptime});
 	});
 }
